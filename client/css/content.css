@@ -45,7 +45,7 @@ ul.pagination li.active a.page-link {
     cursor: pointer;
 }
 
-.productsnav ul li {
+.productsnav ul li{
     display: none;
 }
 

@@ -3,7 +3,12 @@ $(".carousel").carousel({
 });
 
 $(document).ready(function () {
-  $("a").click((e) => {
+  const arrPath = document.getElementsByClassName("path")[0];
+  let firstTextList,
+    secondTextList,
+    toggleNav = true;
+
+  $("a").click(e => {
     e.preventDefault();
   });
 
@@ -24,49 +29,29 @@ $(document).ready(function () {
     );
   });
 
-  const arrPath = document.getElementsByClassName("path")[0];
-  let firstTextList;
-  let secondTextList;
-
   const setText = e => {
     firstTextList = e.target.childNodes[0].nodeValue;
     secondTextList = "";
     arrPath.textContent = secondTextList ? (`${firstTextList}  / ${secondTextList}`) : `${firstTextList}  /`;
   };
 
-  $(".productLinks7").click(e => {
+  $(".productLink").click(e => {
     secondTextList = e.currentTarget.childNodes[0].data;
     arrPath.textContent = secondTextList ? (`${firstTextList}  / ${secondTextList}`) : `${firstTextList}  /`;
   });
 
-  $(".productLinks1").click((e) => {
+  $(".productLinks").click(e => {
     setText(e);
-    $(".toggleLi1").slideToggle(400);
+    $(e.target.nextElementSibling.children).toggle(400);
   });
 
-  $(".productLinks2").click((e) => {
-    setText(e);
-    $(".toggleLi2").slideToggle(400);
+  $("li:hidden").click(() => {
+    $(".toggleLi").hide(400);
   });
 
-  $(".productLinks3").click((e) => {
-    setText(e);
-    $(".toggleLi3").slideToggle(400);
-  });
-
-  $(".productLinks4").click((e) => {
-    setText(e);
-    $(".toggleLi4").slideToggle(400);
-  });
-
-  $(".productLinks5").click((e) => {
-    setText(e);
-    $(".toggleLi5").slideToggle(400);
-  });
-
-  $(".productLinks6").click((e) => {
-    setText(e);
-    $(".toggleLi6").slideToggle(400);
+  $("a[href^=\"#\"]").click(e => {
+    let target = e.target.hash;
+    $("html, body").animate({scrollTop: $(target).offset().top}, 800);
   });
 
 });
