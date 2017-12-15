@@ -1,0 +1,70 @@
+form {
+  text-align: center;
+  display: none;
+  width: 480px;
+  position: absolute;
+  top: 3%;
+  left: 30%;
+  z-index: 1100;
+  color: $light_grey_text;
+  span {
+    float: right;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.overlay {
+  z-index: 1000;
+  position: fixed;
+  background-color: #000;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 2560px) {
+  form.feedback {
+    left: 39%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  form.feedback {
+    left: 30%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  form.feedback {
+    left: 25%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  form.feedback {
+    left: 16%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  form.feedback {
+    width: 300px;
+    top: 1%;
+    left: 10%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  form.feedback {
+    width: 200px;
+    top: 1%;
+    left: 20%;
+  }
+}

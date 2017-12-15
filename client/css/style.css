@@ -1,0 +1,153 @@
+.wraperheader {
+  background: #DBDCDB;
+  color: #767776;
+  font-family: "PT Sans", sans-serif; }
+  .wraperheader header {
+    margin: 0;
+    padding: 0; }
+    .wraperheader header .logo {
+      padding-right: 0; }
+      .wraperheader header .logo .navbar-brand {
+        margin-right: 0; }
+    .wraperheader header .feedback {
+      font-family: "PT Sans", sans-serif;
+      color: #767776;
+      font-weight: bold;
+      border-bottom: 1px dashed #767776;
+      text-decoration: none; }
+    .wraperheader header .phones {
+      font-family: "Open Sans Condensed", sans-serif;
+      text-align: right; }
+
+.container-fluid {
+  padding: 0; }
+  .container-fluid li {
+    background: #D9DBD9; }
+  .container-fluid .active {
+    background: #767776; }
+  .container-fluid .carousel-control-prev-icon, .container-fluid .carousel-control-next-icon {
+    width: 30px;
+    height: 30px; }
+
+.wrappernav {
+  background: #767776; }
+  .wrappernav nav {
+    background: #767776;
+    font-family: "PT Sans", sans-serif;
+    color: #FEFFFE; }
+    .wrappernav nav ul.navbar-nav li.nav-item a.nav-link {
+      font-family: "PT Sans", sans-serif;
+      font-size: 1.2rem;
+      color: #FEFFFE; }
+      .wrappernav nav ul.navbar-nav li.nav-item a.nav-link:hover {
+        box-shadow: 0 4px 3px -4px white; }
+      .wrappernav nav ul.navbar-nav li.nav-item a.nav-link:focus {
+        box-shadow: 0 4px 3px -4px white; }
+    .wrappernav nav button {
+      cursor: pointer; }
+
+div.wrappercontent a, div.wrappercontent aside, div.wrappercontent section, div.wrappercontent div {
+  font-family: "PT Sans", sans-serif;
+  color: #767776;
+  font-size: 16px; }
+div.wrappercontent .path {
+  margin: 0.9rem 0;
+  padding: 0;
+  cursor: pointer; }
+div.wrappercontent aside li {
+  display: none; }
+div.wrappercontent section .product {
+  padding: 20px;
+  margin: 10px;
+  background: #DBDCDB; }
+  div.wrappercontent section .product p {
+    margin-top: 16px; }
+  div.wrappercontent section .product h5 {
+    margin-top: 20px;
+    color: #424342;
+    float: left; }
+  div.wrappercontent section .product a {
+    margin-top: 20px;
+    float: right; }
+div.wrappercontent .mypaging {
+  margin-top: 1.8rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid #767776; }
+  div.wrappercontent .mypaging .active a.page-link {
+    background: #767776;
+    border-color: #A0A1A0; }
+  div.wrappercontent .mypaging a:hover {
+    cursor: pointer;
+    color: #FEFFFE; }
+div.wrappercontent div.text-bottom p {
+  font-size: 14px;
+  word-wrap: break-word;
+  margin-top: 1.8rem; }
+@media screen and (max-width: 425px) {
+  div.wrappercontent div.text-bottom {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row; } }
+
+.myfooter, .myfooter a {
+  padding: 0;
+  background: #767776;
+  color: #FEFFFE;
+  font-family: "PT Sans", sans-serif; }
+  .myfooter li {
+    list-style-type: none; }
+  .myfooter img {
+    width: 35px;
+    height: 50px; }
+
+form {
+  text-align: center;
+  display: none;
+  width: 480px;
+  position: absolute;
+  top: 3%;
+  left: 30%;
+  z-index: 1100;
+  color: #FEFFFE; }
+  form span {
+    float: right; }
+    form span:hover {
+      cursor: pointer; }
+
+.overlay {
+  z-index: 1000;
+  position: fixed;
+  background-color: #000;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none; }
+
+@media screen and (max-width: 2560px) {
+  form.feedback {
+    left: 39%; } }
+@media screen and (max-width: 1440px) {
+  form.feedback {
+    left: 30%; } }
+@media screen and (max-width: 1024px) {
+  form.feedback {
+    left: 25%; } }
+@media screen and (max-width: 1024px) {
+  form.feedback {
+    left: 16%; } }
+@media screen and (max-width: 425px) {
+  form.feedback {
+    width: 300px;
+    top: 1%;
+    left: 10%; } }
+@media screen and (max-width: 320px) {
+  form.feedback {
+    width: 200px;
+    top: 1%;
+    left: 20%; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,22 @@
+.wrappernav {
+  background: $dark_grey;
+  nav {
+    background: $dark_grey;
+    font-family: $base_font;
+    color: $light_grey_text;
+    ul.navbar-nav li.nav-item a.nav-link {
+      font-family: $base_font;
+      font-size: 1.2rem;
+      color: $light_grey_text;
+      &:hover {
+        box-shadow: $shadow_bottom;
+      }
+      &:focus {
+        box-shadow: $shadow_bottom;
+      }
+    }
+    button {
+      cursor: pointer;
+    }
+  }
+}

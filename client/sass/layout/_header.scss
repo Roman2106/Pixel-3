@@ -1,0 +1,26 @@
+.wraperheader {
+  background: $light_grey;
+  color: $dark_grey;
+  font-family: $base_font;
+  header {
+    margin: 0;
+    padding: 0;
+    .logo {
+      padding-right: 0;
+      .navbar-brand {
+        margin-right: 0;
+      }
+    }
+    .feedback {
+      font-family: $base_font;
+      color: $dark_grey;
+      font-weight: bold;
+      border-bottom: 1px dashed $dark_grey;
+      text-decoration: none;
+    }
+    .phones {
+      font-family: $number_font;
+      text-align: right;
+    }
+  }
+}

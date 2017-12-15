@@ -1,0 +1,16 @@
+.container-fluid {
+  padding: 0;
+  li {
+    background: #D9DBD9;
+  }
+  .active {
+    background: $dark_grey;
+  }
+  .carousel-control-prev-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .carousel-control-next-icon {
+    @extend .carousel-control-prev-icon;
+  }
+}

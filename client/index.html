@@ -6,13 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
         integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="sass/layout/_header.scss">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="./css/nav.css">
-  <link rel="stylesheet" href="./css/slider.css">
-  <link rel="stylesheet" href="./css/content.css">
-  <link rel="stylesheet" href="./css/footer.css">
-  <link rel="stylesheet" href="./css/form.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
@@ -70,7 +67,7 @@
   </div>
 
   <div class="container-fluid my-fluid">
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div class="carousel slide" id="carouselExampleIndicators" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -165,7 +162,7 @@
               <a><img class="basket" src="./images/addtobusket.png" alt="basket"></a>
             </div>
           </div>
-          <nav aria-label="Page navigation example" class="mypaging col-auto pl-0 pr-0">
+          <nav aria-label="Page navigation example" class="col-auto pl-0 pr-0 mypaging">
             <ul class="pagination justify-content-center">
               <li class="page-item">
                 <a class="page-link" aria-label="Previous">
@@ -185,7 +182,7 @@
             </ul>
           </nav>
           <div class="container">
-            <div class="row text-bottom">
+            <div class="row justify-content-md-center text-bottom">
               <div class="col-6">
                 <p>Компания «Пиксель Плюс» существует более 6 лет, за это время мы принимали участие в разработке более
                   чем 700 сайтов, поэтому можем уверенно называть себя профессионалами. На данный момент наш коллектив

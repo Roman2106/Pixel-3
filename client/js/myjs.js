@@ -5,8 +5,7 @@ $(".carousel").carousel({
 $(document).ready(function () {
   const arrPath = document.getElementsByClassName("path")[0];
   let firstTextList,
-    secondTextList,
-    toggleNav = true;
+    secondTextList;
 
   $("a").click(e => {
     e.preventDefault();
@@ -50,7 +49,7 @@ $(document).ready(function () {
   });
 
   $("a[href^=\"#\"]").click(e => {
-    let target = e.target.hash;
+    let target = (e.target.hash) || e.target.parentNode;
     $("html, body").animate({scrollTop: $(target).offset().top}, 800);
   });
 

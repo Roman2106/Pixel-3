@@ -1,0 +1,65 @@
+div.wrappercontent {
+  a, aside, section, div {
+    font-family: $base_font;
+    color: $dark_grey;
+    font-size: 16px;
+  }
+  .path {
+    margin: 0.9rem 0;
+    padding: 0;
+    cursor: pointer;
+  }
+  aside {
+    li {
+      display: none;
+    }
+  }
+  section {
+    .product {
+      padding: 20px;
+      margin: 10px;
+      background: $light_grey;
+      p {
+        margin-top: 16px;
+      }
+      h5 {
+        margin-top: 20px;
+        color: #424342;
+        float: left;
+      }
+      a {
+        margin-top: 20px;
+        float: right;
+      }
+    }
+  }
+  .mypaging {
+    margin-top: 1.8rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid $dark_grey;
+    .active a.page-link {
+      background: $dark_grey;
+      border-color: $grey_text;
+    }
+    a:hover {
+      cursor: pointer;
+      color: $light_grey_text;
+    }
+  }
+  div.text-bottom p {
+    font-size: 14px;
+    word-wrap: break-word;
+    margin-top: 1.8rem;
+  }
+
+  @media screen and (max-width: 425px) {
+    div.text-bottom {
+      display: flex;
+      flex-flow: row wrap;
+      flex-direction: row;
+      //float: right;
+    }
+  }
+
+}
+

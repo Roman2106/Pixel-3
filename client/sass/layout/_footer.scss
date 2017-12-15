@@ -1,0 +1,16 @@
+.myfooter {
+  padding: 0;
+  background: $dark_grey;
+  color: $light_grey_text;
+  font-family: $base_font;
+  a {
+    @extend .myfooter;
+  }
+  li {
+    list-style-type: none;
+  }
+  img {
+    width: 35px;
+    height: 50px;
+  }
+}
